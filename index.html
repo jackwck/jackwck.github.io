@@ -2,12 +2,121 @@
 <html>
 
 <head>
-<title>My Page!</title>
+
+<style>
+body{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-image: url("background.jpg");
+    background-size: 500px;
+    
+}
+
+.intro{
+    height:200px;
+    width:800px;
+    display:block;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+img.avatar{
+    border-radius: 50%;
+    float: left;
+    margin: 5px;
+}
+
+img.avatar:hover{
+    opacity: 0.6;
+}
+
+hr.hr_body{
+    margin-left: 0px;
+    width: 50%;
+    border: 5px solid;
+    border-radius: 5px;
+}
+
+h2{
+    font-size: 150%;
+    color: cyan;
+    font-weight: bold;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    display: inline;
+}
+
+h2::before{
+    content: "➤";
+}
+
+a:link {
+  color:yellow;
+}
+
+a:visited {
+  color:darkorange;
+}
+
+a:hover {
+  color: black;
+}
+
+a:active {
+  color: blueviolet;
+} 
+
+iframe.myframe{
+    height: 300px;
+    width: 600px;
+    border: 5px gold solid;
+    border-radius: 10px;
+}
+
+.bottom_bar{
+    position: fixed;
+    left:50%;
+    bottom: 5px;
+}
+
+</style>
+
+<title>Welcome to my homepage!</title>
+
 </head>
 
 <body>
-Hello World!
-<img src="150.jpg">
-</body>
 
+
+<h1 id="firstHeader">&#129313;Welcome to my homepage!&#129313;</h1>
+
+
+<div class="intro">
+<p>
+    <img class="avatar" src="avatar.jpg" alt="Avatar"><br>
+    Hello World.<br>
+    My name is WONG Chak Kwan (Jack).<br>
+    I'm currently studying <a href="https://www.polyu.edu.hk/comp/" target="_blank">Information Technology</a> at <a href="https://www.polyu.edu.hk/" target="_blank">The Hong Kong Polytechnic University</a>.<br>
+</p>
+</div>
+
+
+<hr class="hr_body">
+
+
+<div class="details">
+    <br><br>
+    <h2><a href="hobbies.html" target="myframe">My hobbies</a></h2>
+    <h2><a href="uni-life.html" target="myframe">My university school life</a></h2>
+    <h2><a href="song.html" target="myframe">My favorite Song</a></h2>
+    <br><br>
+    <iframe src="hobbies.html" title="myframe" class="myframe" name="myframe"></iframe> 
+</div>
+
+
+<div class="bottom_bar">
+    <hr>
+    ~Made with &#10084;&#65039; by Jack Wong~
+</div>
+
+
+</body>
 </html>
