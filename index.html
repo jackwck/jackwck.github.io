@@ -8,7 +8,7 @@
 body{
     background-image: url("background.jpg");
     background-size: 500px;
-    
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .intro{
@@ -35,13 +35,8 @@ hr.hr_body{
     border-radius: 5px;
 }
 
-.details{
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-
 h2{
     font-size: 150%;
-    color: cyan;
     font-weight: bold;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: black;
@@ -49,24 +44,18 @@ h2{
 }
 
 h2::before{
-    content: "➤";
+    color: cyan;
+    content: "\27A4";
 }
 
 a:link {
-  color:blue;
-}
-
-a:visited {
-  color:darkorange;
+    color:darkorange;
 }
 
 a:hover {
-  color: black;
+    background-color: white;
+    color: blueviolet;
 }
-
-a:active {
-  color: blueviolet;
-} 
 
 iframe.myframe{
     height: 300px;
